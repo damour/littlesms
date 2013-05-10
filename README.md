@@ -1,13 +1,13 @@
 # Пример использования
 
     <?php
-    require_once 'LittleSMS.class.php';
+    require_once 'LittleSMS.php';
 
     $user = 'my-login';            // логин указанный при регистрации или логин api-аккаунта http://littlesms.ru/my/settings/api
     $key  = 'my-secret-api-key';   // API-key, узнать можно тут: http://littlesms.ru/my/settings/api
     $ssl  = false;                 // использовать защищенное SSL-соединение
 
-    $api = new LittleSMS($user, $key, $ssl);
+    $api = new LittleSMS\LittleSMS($user, $key, $ssl);
 
     // запрос баланса
     echo 'Мой баланс: ' . $api->userBalance(), PHP_EOL;
@@ -29,3 +29,10 @@
         echo sprintf('Статус сообщения %s: %s', $message_id, $status), PHP_EOL;
     }
 
+# Используя composer:
+Добавьте в свой composer.json:
+
+    "require": {
+    ..
+    "pycmam/littlesms": "*"
+    }

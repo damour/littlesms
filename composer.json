@@ -1,0 +1,12 @@
+{
+    "name": "pycmam/littlesms",
+    "description": "Library to work with LittleSMS.ru",
+    "keywords": ["sms"],
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Rustam Miniahmetov",
+            "email": "pycmam@gmail.com"
+        }
+    ]
+}

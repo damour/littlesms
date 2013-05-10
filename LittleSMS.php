@@ -1,5 +1,7 @@
 <?php
 
+namespace LittleSMS;
+
 /**
  * Класс для работы с сервисом LittleSMS.ru
  *

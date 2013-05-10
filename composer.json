@@ -3,6 +3,9 @@
     "description": "Library to work with LittleSMS.ru",
     "keywords": ["sms"],
     "minimum-stability": "dev",
+    "autoload": {
+        "psr-0": {"LittleSMS": ""}
+    },
     "authors": [
         {
             "name": "Rustam Miniahmetov",
